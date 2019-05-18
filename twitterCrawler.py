@@ -19,7 +19,7 @@ class Crawler():
 
 		while halt:
 			try:
-				new_tweets = self.api.search(q=self.keyword, count=200, lang=self.lang, max_id=str(last_id - 1))
+				new_tweets = self.api.search(q=self.keyword, count=200, lang='en', max_id=str(last_id - 1))
 				if not new_tweets:
 					halt=False
 
