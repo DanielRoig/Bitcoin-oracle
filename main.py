@@ -1,6 +1,6 @@
 import twitterCrawler as crawler
 
-twitterCrawler=crawler.Crawler("Bitcoin",1)
+twitterCrawler=crawler.Crawler("Bitcoin",1,"en")
 twitterCrawler.track()
 
 for tweet in twitterCrawler.myTweets:

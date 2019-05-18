@@ -2,9 +2,10 @@ import tweepy
 import datetime
 
 class Crawler():
-	def __init__(self, keyword, hours):
+	def __init__(self, keyword, hours, lang):
 		self.keyword = keyword
 		self.hours = hours
+		self.lang = lang
 		self.myTweets = []
 
 		self.auth = tweepy.OAuthHandler("PxrgqjQnWgGvfATB4hWXlyshv", "SNKu5GeyPCFIpRpWI7cFIEsKud4N7cstZqTT1qJNcO5PzovkiG")
@@ -18,7 +19,7 @@ class Crawler():
 
 		while halt:
 			try:
-				new_tweets = self.api.search(q=self.keyword, count=200, lang='en', max_id=str(last_id - 1))
+				new_tweets = self.api.search(q=self.keyword, count=200, lang=self.lang, max_id=str(last_id - 1))
 				if not new_tweets:
 					halt=False
 
