@@ -1,12 +1,13 @@
 import tweepy
+from Tweet import Tweet
 import datetime
 
 
 class Crawler:
-    def __init__(self, keyword, hours, lang):
+    def __init__(self, keyword, hours, language):
         self.keyword = keyword
         self.hours = hours
-        self.lang = lang
+        self.lang = language
         self.myTweets = []
 
         self.auth = tweepy.OAuthHandler("PxrgqjQnWgGvfATB4hWXlyshv",
@@ -17,7 +18,7 @@ class Crawler:
 
     def track(self):
         time_first_tweet = 0
-        halt = True;
+        halt = True
         last_id = -1
 
         while halt:
@@ -44,11 +45,3 @@ class Crawler:
                 halt = False
 
 
-class Tweet:
-    def __init__(self, tweet_text, tweet_date, user_nickname, user_id, user_followers):
-        self.tweet_text = tweet_text
-        self.tweet_date = tweet_date
-        self.user_nickname = user_nickname
-        self.user_id = user_id
-        self.user_followers = user_followers
-        self.behaviour = 0

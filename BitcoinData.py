@@ -1,4 +1,5 @@
-import urllib, json
+import json
+import urllib.request as request
 
 
 class BitcoinData():
@@ -7,9 +8,11 @@ class BitcoinData():
 
     def averageData(self):
         url = "https://min-api.cryptocompare.com/data/generateAvg?fsym=BTC&tsym=USD&e=Kraken"
-        response = urllib.urlopen(url + "&api_key=" + self.apiKey)
+        response = request.urlopen(url + "&api_key=" + self.apiKey)
         data = json.loads(response.read())
         return data
+
+
 
 # Web api -> https://www.cryptocompare.com
 # User -> carlos.matos.from.new.york@gmail.com

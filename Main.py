@@ -1,7 +1,7 @@
-import twitterCrawler as crawler
-import bitcoinData as btc
+from Crawler import Crawler
+import BitcoinData as Btc
 
-twitterCrawler = crawler.Crawler("Bitcoin", 1, "en")
+twitterCrawler = Crawler("Bitcoin", 1, "en")
 twitterCrawler.track()
 
 for tweet in twitterCrawler.myTweets:
@@ -13,5 +13,5 @@ for tweet in twitterCrawler.myTweets:
 
     print("----------------------------")
 
-bitcoin = btc.BitcoinData()
+bitcoin = Btc.BitcoinData()
 print(bitcoin.averageData())
