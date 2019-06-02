@@ -17,6 +17,7 @@ class Crawler:
         self.api = tweepy.API(self.auth)
 
     def track(self):
+        print('Receiving Tweets...')
         time_first_tweet = 0
         halt = True
         last_id = -1

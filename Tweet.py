@@ -8,3 +8,4 @@ class Tweet:
         self.user_id = user_id
         self.user_followers = user_followers
         self.behaviour = 0
+        self.sentiment = 0
