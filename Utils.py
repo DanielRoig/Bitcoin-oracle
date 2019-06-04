@@ -52,12 +52,14 @@ def retrieve_tweets(currency, hours, language):
     # Sum of the 3 score result
     tweet_amount = broker_capital.tweet_amount + broker_lower.tweet_amount + broker_abbreviation.tweet_amount
     score_avg = (broker_capital.score_avg + broker_lower.score_avg + broker_abbreviation.score_avg) / 3
+    weighted_score = (broker_capital.follower_based_score + broker_lower.follower_based_score + broker_abbreviation.follower_based_score) / 3
 
     data = {
         'Cryptocurrency': cryptodata['FROMSYMBOL'],
         'Current price': cryptodata['DISPLAY'] + '$',
         'Tweet amount': tweet_amount,
         'Score Average': score_avg,
+        'Weighted Score': weighted_score,
         'state': 'OK'
     }
 
