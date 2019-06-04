@@ -56,8 +56,10 @@ def command_default(message):
     bot.send_sticker(message.chat.id, "CAADAQADDgADHYJ7HdRDi-MonN_9Ag")
     bot.send_message(message.chat.id, "I don't understand. What I'm gonna do?")
 
+
 bot.polling()
 
-while True: # Don't let the main Thread end.
+while True:
+    # Don't let the main Thread end.
     pass
 
