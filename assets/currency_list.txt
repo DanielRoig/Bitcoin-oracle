@@ -1,0 +1,715 @@
+Bitcoin BTC 
+Ethereum ETH 
+Litecoin LTC 
+Ripple XRP 
+Siacoin SC 
+EthereumClassic ETC 
+Dash DASH 
+BitShares BTS  
+Monero XMR
+Augur REP
+Stratis STRAT 
+Zcash ZEC 
+Factom FCT  
+NEM XEM 
+DigiByte DGB Scrypt,Qubit,Skein,Groestl 
+Dogecoin DOGE 
+Nxt NXT  
+Dashcoin DSH , CryptoNight 
+Decred DCR 
+Steemit STEEM 256 
+MaidSafeCoin MAID  
+lbryCoin LBC 
+Syscoin SYS 
+Potcoin POT 
+BlackCoin BLK 
+ByteCoin BCN , CryptoNight 
+BURST BURST  
+Clams CLAM  
+ViaCoin VIA 
+VeriCoin VRC 
+BelaCoin BELA 
+VertCoin VTC 
+NeosCoin NEOS 256 
+BitcoinPlus XBC 
+Nautiluscoin NAUT 
+Peercoin PPC 256 
+Myriad-scrypt , SHA-256D, Qubit, Skein, Groestl 
+Nexium NXC  
+FoldingCoin FLDC  
+Namecoin NMC 256, Merged mining 2011
+Counterparty XCP  
+Expanse EXP Hashimoto 
+Florin FLO 
+Gridcoin GRC 
+PascalCoin PASC 256 
+Navcoin NAV 
+BitcoinDark BTCD 256 
+Primecoin XPM , Cunningham 
+BitConnect BCC 
+BitCrystals BCY  
+PinkCoin PINK 
+Radium RADS 
+DNotes NOTE 
+EmerCoin EMC 256 
+Cloakcoin CLOAK 
+ElCoin EL  
+Huntercoin HUC  Scrypt 
+RieCoin RIC  
+Sibcoin SIB 
+LEOcoin LEO jane 
+Bitmark BTM 
+Polybius PLBT  2017
+Vcash XVC 
+Novacoin NVC 
+Fastcoin FST 
+Waves WAVES  
+CureCoin CURE 256 
+EDinar EDR 
+Voxels VOX 
+Iconomi ICN  
+Transfercoin TX 
+BitSend BSD 
+ArcticCoin ARC ?
+Sexcoin SXC 
+MonaCoin MONA 
+Craftcoin CRC 
+Yocoin YOC  
+Bata BTA 
+UNCoin UNC 
+Solarcoin SLR 
+TrumpCoin TRUMP 
+PostCoin POST 
+CrevaCoin CREVA 
+HellenicCoin HNC 
+AdzCoin ADZ 
+Dimecoin DIME  
+Leadcoin LDC 
+BlueCoin BLU 
+DaMaCoin DMC 
+BitcoinUnlimited BCU 256 
+DrCoin ISK 
+10kCoin 10K 256, Scrypt, X11 
+1Credit 1CR 
+2GiveCoin 2GIVE 
+365coin 365 
+42Coin 42 
+66Coin 66 
+Achilles ACH 
+Acoin ACOIN 256 
+AeonCoin AEON , CryptoNight 
+AeroCoin AERO 
+AidBit AID 
+Aiden ADN OG 
+AIRcoin AIR 
+AlexiumCoin AUM 
+AlienCoin ALN 
+Alipaycoin ALI 
+Alphacoin ALF 
+AmberCoin AMBER 
+AmericanCoin AMC 
+Amygws AMY 
+AndroidsTokens ADT  
+AnimeCoin ANI  
+Anoncoin ANC 
+AntimatterCoin ANT 
+ApexCoin APEX 
+AphroditeCoin APH 
+AppCoin APP 
+AppleBytes ABY 
+ArbitCoin ARB 256 
+ARCHcoin ARCH 
+Argentum ARG 
+Aricoin ARI 
+Arkhash ARK 256 
+AsiaCoin AC 
+Asiadigicoin ADCN 
+AsicCoin ASC 256 
+Astrocoin ASR 
+AtheistCoin ATH 
+AuroraCoin AUR Scrypt,Qubit,Skein,Groestl 
+AurumCoin AU 256 
+Axiom AXIOM 
+AXIScoin AXIS 
+Badgercoin BDG 
+BancorCoin BNCR 256 
+BankCoin BANK 
+Bantam BNT 
+BanxShares BANX  
+BatCoin BAT 
+Battlecoin BCX 256 
+BBQCoin BQC 
+BCTCoin BCT 
+BeaoCoin BEC 
+BeatleCoin BEA 
+BeaverCoin BVC 
+BeeCoin BEE 
+BeerCoin BEER 
+BeliCoin BELI 
+Bells BEL 
+Benjamins BEN 256 
+Betacoin BET 256 
+BigBullion BIG 256 
+BigCoin HUGE 
+BigUp BIGUP  
+Bikercoin BIC , CryptoNight 
+BillionCoin BIL 
+BilShares BILS  
+BiosCrypto BIOS  
+BipCoin BIP , CryptoNight 
+Bitbar BTB 
+BitBean BITB 256 
+BitBlock BBL 
+BitcoinCore BCc 256 
+BitcoinScrypt BTCS 
+BitcoinTX BTX 
+BitcoinUnlimited BTU 256 
+BitCredit BCR  SHA-512 
+Bitgem BTG 
+Bithire HIRE  
+Bitinum BTN 256 
+Bitleu BTL jane 
+BitLion XBL 
+BitQuark BTQ  
+BitStar BITS 
+BitZeny ZNY 
+BlackDragonCoin BDC jane 
+Blakecoin BLC 
+BlitzCoin BLTZ 
+Blocknet BLOCK 
+BolivarCoin BOLI 
+BONESCryptoCoin BONES 
+BonusCoin BNS 256 
+Boolberry BBR , Wild keccak 
+BoomCoin BOOM 
+Bottlecaps CAP 
+Brigadecoin BRIG 
+BTCtalkcoin TALK 
+BurbuCoin BUR 
+ButterflyCoin BFC 256 
+Bytecoin2 BTE 256 
+CACHeCoin CACH jane 
+CageCoin CAGE 
+Caishen CAI N 
+CanadaeCoin CDN 
+CannabisCoin CANN 
+Cannacoin CCN 
+Capricoin CPC 
+CarbonCoin CARB CarbonCoin CARB 
+CarpeDiemCoin DIEM 256 
+CashCoin CASH 
+Casinocoin CSC 
+Cataloniacoin CATC N 
+Catcoin CAT 
+CereiPayCoin CRPC 
+CharityCoin CHA 
+Checkcoin CKC 
+CherryNote CRR , CryptoNight 
+ChipCoin CHIP CHNCoin CNC 
+Chococoin CCC 256 
+Cinnamoncoin CIN 
+CinniCoin CINNI 
+CleanWaterCoin WATER 
+CloudCoin CDC 
+ClubCoin CLUB 
+CNOTEcoin CNOTE  
+CoCoCoin COCO 
+COIN COIN 
+Coin2 C2  
+CoinmarketsCoin JBS 
+Coino CNO 
+CoinoIndex INDEX 
+Coinomat1 CNMT 
+CoinyeCoin COYE 
+ColossusCoin COL 
+CommunityCoin COMM 
+Conspiracycoin CYC 
+Continuumcoin CTM 256 
+CopperBars CPR jane 
+CopperLark CLR 
+CorgiCoin CORG 
+Cosmoscoin CMC 
+Credit CR 
+Credits CRD 
+CREDS XXC 256 
+CrownCoin CRW 256 
+CRTcoin CRT 
+CryptCoin CRYPT 
+CryptoBuck BUK 
+CryptoBullion CBX 
+CryptoEagle CREA 256 
+CryptoEscudo CESC 
+CryptographicAnomaly CGA 
+CryptoMeth METH 
+Cryptonite XCN 
+CrystalCoin CRYST 
+Cthulhu OFF  
+CzechCrownCoin CZC N 
+DarkCash DRKC 
+Darknet DNET 
+DarkNetCoin DNC , Wild keccak 
+DarkNote XDN , CryptoNight 
+DataCoin DTC , Cunningham 
+Denarius DRS 
+Devcoin DVC 256 
+Diamond DMD 
+Diggits DIGS 
+Digieuro DEUR 256, Scrypt 
+Digit DIG 
+Digitalcoin DGC 256, Scrypt, X11 
+DigitalPrice DP 
+DigixDAO DGD  
+DinarCoin IQD 256 
+DogecoinDark DOGED 
+DopeCoin DOPE 
+DosCoin DOS 
+Doubloons DBL 
+DougCoin DOUG  
+DuckDuckCoin DUCK 
+DvoraKoinGroestl DVK 256, Scrypt, Groestl 
+DvoraKoinScrypt DVK 256, Scrypt, Groestl 
+DvoraKoinSHA256 DVK 256, Scrypt, Groestl 
+EarthCoin EAC 
+EasyLCoin ELCO 
+eBoost EBST EBTcoin EBT 
+ECCoin ECC 
+Eclipse EC 256 
+EDRcoin EDRC 256 
+EduCoin EDU 
+Einsteinium EMC2 
+Ekita EKITA 
+Ekrona KRN 
+Elacoin ELC N 
+Electric VOLT ElectronicGulden EFL 
+Elementrem ELE Hashimoto 
+Elephantcoin ELP 
+eMark DEM 256 
+Emerald EMD 
+EmotiCoin EMO 
+EmuCoin EMU N 
+EntropyCoin ENC N 
+ESportsCoin ESC 
+Ethercoin ETCC  
+eToken ETOK 
+Eurokoin EUK 
+EuropeCoin ERC 
+eUtopium UPM 
+Evotion EVO 256 
+Execoin EXE N 
+Experiencecoin EPC 
+Extremecoin EXC 
+EZCoin EZC 
+FailCoin FAIL 
+FairCoin FAC 
+FairQuark FRQ  
+Fantom FCX 
+Fantomcoin FCN , CryptoNight 
+Feathercoin FTC 
+FedoraCoin TIPS 
+Fermat IOP 256 
+FibreCoin FIBRE 
+Fireflycoin FFC 256 
+FlappyCoin FLAP 
+Floripacoin FLN 
+Fluttercoin FLT 
+Forexcoin FRX 
+FoxCoin FOX 
+Fractalcoin FRAC 
+Franko FRK 
+FreeCoin FRE jane 
+Freicoin FRC 256 
+FreshCoin FRSH 
+FriendshipCoin FSC 
+Frozen FZ  
+FryCoin FRY 
+FUDCoin FUD 256 
+FuelCoin FUEL 256 
+Fuguecoin FC 
+Gaelcoin GAC Galaxycoin GLX 
+Galleon GLN 
+Gambit GAM 
+Gamecoins GME 
+Gamecredits GMC 
+GameleagueCoin GML 
+Gapcoin GAP 
+GenesisCoin GNS N 
+Geocoin GEO 
+GermanyCoin GER 
+GetGems GEMZ 
+Ghostcoin GHC 
+GiarCoin GIAR N 
+GiveBackCoin GIV  SHA256, Qubit, Skein, Groestl 
+Givecoin GIVE 
+GlobalBoost BST 
+GlobalBoostY BSTY 
+Globalcoin GLC 
+GlobalCurrencyReserve GCR 
+GlobalDenomination GDN 
+Globe GLB 256 
+GlyphCoin GLYPH 
+Goalcoin GOAL 
+Goldcoin GLD 
+Goldcoin GBC 
+GoldReserve XGR 
+GPUCoin GPUC N 
+Graincoin GRA 
+Grandcoin GDC 
+GraniteCoin GRN 
+Grantcoin GRT 256 
+Greececoin GRCE 
+GridPay GRID  
+GroestlCoin GRS 
+GrowthCoin GRW 
+GrumpyCoin GRUMP 
+GSMcoin GSM 
+GuarantCoin GTC N 
+Guldencoin NLG 
+Guncoin GUN 
+H2Ocoin H2O N 
+Halcyon HAL 
+HamRadioCoin HAM 256 
+Hashcoin HASH 
+Heavycoin HVC 
+Heisenberg HEX 
+HelixCoin HXC 
+HighFiveCoin H5C 
+Hirocoin HIRO 
+HispaCoin HPC 256 
+HoboNickels HBN 
+HOdlcoin HODL 
+HongKongCoin HKC 256 
+Honorcoin XHC 
+Horizon HZ 
+Hotcoin HOT 
+HouseofCoins HOC 
+HTML5coin HTML5 
+Hypercoin HYC 
+HyperStake HYP 
+I0Coin I0C 256 2011
+IcebergCoin ICB 
+ImperialCoin IPC 
+Incakoin NKA 256 
+Infinitecoin IFC 
+Influxcoin INFX 
+InformationCoin ITC 
+InsanityCoin WOLF 
+Intellect INT 
+IOCoin IOC 
+Isracoin ISR 
+Iticoin iTi 
+IvugeoEvolutionCoin IEC 
+IXCoin IXC 256 2011
+JackpotCoin JPC 
+JiffyCoin JIF 256 
+JoinCoin J 
+Joulecoin XJO 256 
+JudgeCoin JUDGE 
+JuggaloCoin JUG 
+Junkcoin JKC KarmaCoin KARM 
+Kazcoin KZC 
+KeyCoin KEY 
+KhanCOIN KNC 
+KiloCoin KLC KimotoCoin KMC N 
+KittehCoin MEOW 
+KlondikeCoin KDC 
+Komodo KMD 
+Krugercoin KGC 
+Kryptohash KHC 
+Krypton KR Hashimoto 
+Kumacoin KUMA  
+LabourHour LH 
+Latium LAT  
+Leafcoin LEAF 
+LeagueCoin LOL 
+Lebowskis LBW 
+LegendaryCoin LGD 
+Leprocoin LPC 
+LetsTalkBitcoin LTBC 
+Levocoin LEVO 
+LGBTQoin LGBTQ 
+Libertycoin XLB 
+LibrexCoin LXC 
+LightCoin LIT 
+LimeCoinX LIMX 
+LinkedCoin LKC Lisk LISK 
+Litebar LTB 
+LitecoinDark LTCD 
+LiteCoinX LTCX 
+Logicoin LGC 
+Lottocoin LOT 
+Lovecoin LOVE 
+Luckycoin LKY 
+LycanCoin LYC 
+Lyrabar LYB 
+MagicInternetMoney MIM 
+MagiCoin MAGI 
+MammothCoin MAMM 
+MangoCoinz     MNS 
+MapleCoin MPL 
+Marinecoin MTC Marscoin MRS 
+MarteXcoin MXT 
+MaruCoin MARU 
+MasterCoin MSC MastiffCoin MAST 
+Mavro MVR 
+Maxcoin MAX 
+Mazacoin MZC 256 
+MediterraneanCoin MED 
+Megacoin MEC 
+MemeCoin MEM 
+MemoryCoin MMC  SHA-512 
+Metiscoin MTS  
+microCoin MRC jane 
+Millionaire MIL 
+Mincoin MNC 
+Mineralscoin MIN 
+Mintcoin MINT 
+Mjollnircoin MNR 
+MMXIV MMXIV 256 
+Moneta MONETA 
+MonetaryUnit MUE  
+MonetaVerde MCN , CryptoNight 
+Monocle MON N, Merged mining 
+Mooncoin MOON 
+Motocoin MOTO 
+Mountcoin MNT , CryptoNight 
+Moviecoin MVC 
+MozzShare MLS 
+MtGoxCoin GOX 
+MultiWalletCoin MWC 
+Muniti MUN 
+Murraycoin MRY N 
+NaanaYaM NYM 256 
+Nanotoken NAN Neocoin NEC 
+NeptuneCoin NTC 
+Neptunium NPT , CryptoNight 
+Netcoin NET 
+Networkcoin NWC NeuCoin NEU 
+NeutrinoCoin NTR 
+Nexus NXS 3 
+Nibble NIB 
+NigeriaCoin NGC SHA2 
+Nimbus NMB 
+NoahCoin NOAH 
+NobleCoin NOBL 
+Noirbits NRB 
+NoirShares NRS  SHA-512 
+NPCcoin NPC 256 
+NuBits NBT  
+NuShares NSR  
+NyanCoin NYAN 
+Nybble NBL 
+o2ocoin O2O  
+OctoCoin 888 
+OilCoin OIL 
+OKCash OK 
+Omnicoin OMC 
+Onecoin ONC jane 
+OneEvilCoin OEC , CryptoNight 
+OnlineGamingCoin OGC 
+OpenSourcecoin OSC 256 
+Operand OP 
+Orangecoin OC 
+Orbitcoin ORB 
+ORObit ORO 256 
+P7Coin P7C 
+Panda PANDA N 
+PandaCoin PND Pandacoin PAND 
+Par1Coin PAR1 Par25Coin PAR25 ParallaxCoin PLX N, Merged mining 
+ParkByte PKB 256 
+Particle PRT  
+PawnCoin PAWN 
+PayCoin XPY 256 
+PayPro PRO 256 
+Payzor PZR 
+Peacecoin PEC 
+Pebblecoin XPB , Boulderhash 
+Peerplays PEERPLAYS PenguinCoin PENG 
+Pennies CENT jane 
+PeopleCoin PPL 
+PesetaCoin PTC 
+Philosopherstone PHS 
+Phoenixcoin PXC 
+Photoncoin PHO  
+piCoin PI 
+Piggycoin PIGGY 
+PioneerCoin PER 
+Platinum PT 256 
+PLNcoin PLNC 
+Polcoin PLC 256 
+PolishCoin PCC 
+PopulaceCoin POC 
+PosEx PEX 256 
+PowerCoin PWC 
+PremineCoin PMC 256 Transaction fee 
+Prime-XI  
+ProCoin PCN 
+ProfitCoin PFC 
+ProsperCoin PRC 
+ProtoShares PTS  SHA-512 
+Prototanium PR 256 
+PseudoCoin PSEUD 
+PWNYCOIN PWNY 256 
+Pxlcoin PXL 
+Pyramids PYRA 
+Qora QORA  
+QQcoin QQC Jane 
+Quark QRK 
+Quarkbar QB  
+Quatloo QTL 
+QuazarCoin QCN , CryptoNight 
+QubitCoin Q2C 
+Quebecoin QBC 
+QuidCoin QUID 
+Rabbitcoin RBBT 
+RainbowGoldCoin RAIN 
+RandomQuark RQC  
+RapidCoin RPD 
+RateCoin XRA 
+Razor RZR 
+RCoin RCN RealCoin REC Redcoin RED ReddCoin RDD 
+RhinoCoin RHC 
+Richcoin RCH RipoffCoin RIPO 
+RonPaulcoin RPC 
+RootCoin ROOT 
+rotoCoin RT2 N 
+RoyalCoin RYC 
+RubleBit Rubit 
+RubyCoin RUBY 
+SaffronCoin SFR 256, Scrypt, Groestl, X11, Blake 
+SambaCoin SMB 
+Sapphire SPH 
+Saturn2coin SAT2 
+SaturnCoin SAT 
+SaveCoin SPC 256 
+Scorecoin SCORE 
+SecretCoin SCRT 
+SecureCoin SRC  
+SelenCoin SEL 
+SembroToken SMBR 
+ServX XSX 
+ShadeCoin SHADE 
+ShadowCash SDC 
+SharkCoin SAK  
+ShellCoin SHELL 
+ShibeCoin SHIBE 
+ShiftCoin SHF Hashimoto 
+SiameseCoin SIS 
+SignatureCoin SIGN 
+SiliconValleyCoin XSV N 
+SkeinCoin SKC SHA2 
+SkyNetCoin SNET 
+Slothcoin SLOTH 
+SmartCoin SMC 
+Snowballs BALLS 256 
+SocialCoin SOC 
+SocialxBot XBOT 
+SOILcoin SOIL Hashimoto 
+SolarFarmAsset CELL  
+Solaris XLR 
+SongCoin SONG 
+SonicScrewdriver SSD 256 
+Sovereigncoin SVC 
+SpainCoin SPA N 
+SpartanCoin SPN 
+Spec SPEC 
+SpeedCoin SPD N 
+Spots SPT 
+SpreadCoin SPR 
+Sprouts SPRTS 256 
+SSVCoin SSV 
+Stablecoin SBC 
+Stackedcoin STC 256 
+StartCoin START 
+StarTrek UFC 
+Stashcoin STA 256 
+Stealthcoin XST 
+Stellar XLM  
+Sterlingcoin SLG 
+StoriesCoin STY 256 
+SunCoin SUN 
+Supcoin SUP 
+SuperCoin SUPER 
+SuperNet UNITY 
+Surge SRG 
+Swiscoin SCN 
+SynCoin SYN 
+TacoCoin TCO 
+Tagcoin TAG 
+Takeicoin TAK 256 
+TalkCoin TAC 
+Teacoin TEA 256 
+TEKcoin TEK 256 
+TenfiveCoin 10  Scrypt-N 
+Terracoin TRC 256 
+TeslaCoin TESLA 
+TheCypherfunks FUNK 
+ThorCoin THOR jane 
+Ticketcoin TKT 
+Tickets TIX 
+Tigercoin TGC 256 
+Titcoin TIT 256 
+TittieCoin TTC 
+Tlascoin TLS  
+TMCoin TMC  
+TongYongCoin TYC  
+TopCoin TOP TRMB TRMB Trollcoin2 TROLL 
+TWEcoin TWE 
+TwilightCoin TWC 
+Ufocoin UFO 
+UltraCoin UTC jane 
+Unattainium UNAT 256 
+Unbreakablecoin UNB 256 
+Unicoin UNIC 256 
+UniteCoin UNI 
+UnitedScryptCoin USC 
+UniversalCurrency UNIT 256 
+UniverseCoin UNVC 
+Unobtanium UNO 256 
+Urocoin URO 
+USDeCoin USDE 
+UseCoin USE 
+ValueCoin VLC 
+VegasCoin VGC 
+Veilcoin VEIL 
+Velocitycoin VEL jane 
+Verge XVG X17,Groestl,Blake2s,Lyra2rev2 
+VirtaCoin VTA 
+VirtualCoin VC 
+VirtualMiningCoin VMC N 
+VolatilityCoin VLTY 
+VorteX VTX 
+Voyacoin VOYA 
+VpnCoin VPN 
+WankCoin WKC 256 
+Wecoin WEC 
+WhirlCoin WHRL 
+WhiteCoin WC 
+WikiCoin WIKI  
+WildBeastBitcoin WBB 
+WildWestCoin WEST 
+WorldAidCoin WAC N 
+Worldcoin WDC 
+X-Children  
+Xaurum XAU  
+XCICOIN XCI , CryptoNight 
+XCurrency XC 
+Xedoscoin XDC SHA2 
+XenCoin XNC 
+XiaoMiCoin MI 
+Xivra XIV 
+XuroCoin XURO 
+XXLcoin XXL 
+YACCoin YACC 
+Yacoin YAC jane 
+YBCoin YBC jane 
+YellowCoin YC 
+YinYangCoin YANG 
+YoshiCoin YSH 
+ZcCoin ZCC jane 
+ZClassic ZCL 
+Zcoin XZC 
+Zedcoin ZED 
+Zeitcoin ZEIT Zetacoin ZET 256 
+ZipCoin ZIPC 
+ZombieCoin ZMB 
+Zoom ZOOM 

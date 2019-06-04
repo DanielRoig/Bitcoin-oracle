@@ -9,6 +9,7 @@ class Broker:
         self.score_sum = 0
         self.score_avg = 0
         self.follower_based_score = 0
+        self.follower_amount = 0
 
     def analyse(self, tweet_list):
 
@@ -58,6 +59,9 @@ class Broker:
 
             # Compute the score-followers algorithm
             self.follower_based_score += self.analyse_followers_score(tweet)
+
+            # Get follower count
+            self.follower_amount += tweet.user_followers
 
         # Compute the standard avg
         self.score_avg = self.score_sum / self.tweet_amount

@@ -1,6 +1,6 @@
 import telebot
 from telebot import types
-
+from Utils import retrieve_tweets
 TOKEN = '867716809:AAGcvZb7K4-zeOWFpNv-nh9bqo0D0TiDCew' 
 
 bot = telebot.TeleBot(TOKEN)
@@ -29,15 +29,19 @@ def command_help(message):
 def command_answer1(message):
     
     #CRIDA DE FUNCIONS NECESSARIES
-
     bot.send_message(message.chat.id, "Aqui mostrem estadistiques i emojis i blablabla")
-    bot.send_message(message.chat.id, "So... It seems")
-    pump=True
-    if pump:
-        bot.send_sticker(message.chat.id, "CAADBAADcAAD6EZ5AAGO_ov4mgcnRgI") 
- 
+    bot.send_message(message.chat.id, "So... It seems...")
+    data = retrieve_tweets("bitcoin", 1, "en")
+
+    if data['state'] == 'OK':
+        # Pump
+        if data['Score Average'] > 0:
+            bot.send_sticker(message.chat.id, "CAADBAADcAAD6EZ5AAGO_ov4mgcnRgI")
+        # Dump
+        else:
+            bot.send_sticker(message.chat.id, "CAADBAADbwAD6EZ5AAHJt9W7WsFcTwI")
     else:
-        bot.send_sticker(message.chat.id, "CAADBAADbwAD6EZ5AAHJt9W7WsFcTwI")
+        print('INTRODUCE AGAIN THE CRYPTOCURRENCY (EJ: Ethereum, Bitcoin, Ripple')
 
 @bot.message_handler(func=lambda message: message.text == 'Give me the prize of Bitcoin' and message.content_type == 'text')
 def command_answer2(message):
