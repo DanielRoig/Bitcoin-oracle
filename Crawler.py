@@ -41,7 +41,7 @@ class Crawler:
                             Tweet(tweet.text, tweet.created_at, tweet.author.screen_name, tweet.author.id,
                                   tweet.author.followers_count))
                     last_id = new_tweets[-1].id
-
+                print(self.myTweets)
             except tweepy.TweepError as e:
                 halt = False
 

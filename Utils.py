@@ -1,7 +1,7 @@
 from Crawler import Crawler
 import CryptoData as CryptoData
 from Broker import Broker
-
+from pprint import pprint
 
 def retrieve_tweets(currency, hours, language):
 
@@ -14,13 +14,6 @@ def retrieve_tweets(currency, hours, language):
         line = line.split(' ')
         currency_list[line[0]] = line[1].rstrip()
 
-    # If currency input is not in the dictionary RIP
-    if currency.capitalize() not in currency_list:
-        data = {
-            'state': 'WRONG_CURRENCY'
-        }
-        return data
-
     currency_abbreviation = currency_list[currency.capitalize()]
 
     # Create, setup and execute the crawlers
@@ -32,8 +25,8 @@ def retrieve_tweets(currency, hours, language):
     currency_abbreviation_crawler = Crawler(currency_abbreviation, hours, language)
 
     currency_capital_crawler.track()
-    currency_lower_crawler.track()
-    currency_abbreviation_crawler.track()
+    # currency_lower_crawler.track()
+    # currency_abbreviation_crawler.track()
 
     # Create the Brokers
     broker_capital = Broker()
@@ -41,9 +34,16 @@ def retrieve_tweets(currency, hours, language):
     broker_abbreviation = Broker()
 
     # Broker analyses the sentiment of all the tweets retrieved
-    broker_capital.analyse(currency_capital_crawler.myTweets)
-    broker_lower.analyse(currency_lower_crawler.myTweets)
-    broker_abbreviation.analyse(currency_abbreviation_crawler.myTweets)
+    # If it does not get any tweets return error
+    # if not broker_capital.analyze(currency_capital_crawler.myTweets):
+    #     data = {
+    #         'state': 'NO_MORE_TWEETS'
+    #     }
+    #     return data
+
+    broker_capital.analyze(currency_capital_crawler.myTweets)
+
+
 
     # Get all the data of the crypto from www.cryptocompare.com
     cryptocurrency = CryptoData.CryptoData()
@@ -53,13 +53,13 @@ def retrieve_tweets(currency, hours, language):
     tweet_amount = broker_capital.tweet_amount + broker_lower.tweet_amount + broker_abbreviation.tweet_amount
     score_avg = (broker_capital.score_avg + broker_lower.score_avg + broker_abbreviation.score_avg) / 3
     weighted_score = (broker_capital.follower_based_score + broker_lower.follower_based_score + broker_abbreviation.follower_based_score) / 3
-
+    pprint(cryptodata)
     data = {
-        'Cryptocurrency': cryptodata['FROMSYMBOL'],
-        'Current price': cryptodata['DISPLAY'] + '$',
-        'Tweet amount': tweet_amount,
-        'Score Average': score_avg,
-        'Weighted Score': weighted_score,
+        'Cryptocurrency': cryptodata['RAW']['FROMSYMBOL'],
+        'Current_price': cryptodata['DISPLAY']['PRICE'],
+        'Tweet_amount': tweet_amount,
+        'Score_Average': score_avg,
+        'Weighted_Score': weighted_score,
         'state': 'OK'
     }
 

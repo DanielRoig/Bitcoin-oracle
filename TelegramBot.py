@@ -8,7 +8,7 @@ client_list=[]
 
 
 def setClient(client, coin='', hour=0):
-    index =checkClient(client)
+    index = checkClient(client)
 
     if coin !='':
         client_list[index][1]=coin
@@ -22,11 +22,25 @@ def resetClient(client):
     client_list[index][2]=0
 
 def coinExist(coin):
-    return True
+
+    # Fill up a dictionary with the crypto abbreviation ("Bitcoin" : "BTC")
+    currency_list = {}
+    currency_list_file = open('assets/currency_list.txt', "r")
+
+    for line in currency_list_file:
+        line = line.split(' ')
+        currency_list[line[0]] = line[1].rstrip()
+
+    # If currency input is not in the dictionary RIP
+    if coin not in currency_list:
+        return False
+    else:
+        return True
+
 
 def checkClient(client):
     for index, client in enumerate(client_list):
-        if client[0]==client:
+        if client[0] == client:
             return index #Existe
     return False   #No existe
 
@@ -39,7 +53,7 @@ def checkClient(client):
 @bot.message_handler(commands=['start', 'help'])
 def command_help(message):
     
-    if checkClient(message.chat.id)==False:
+    if checkClient( message.chat.id )==False:
         client_list.append([message.chat.id,'0',0])
 
     bot.send_sticker(message.chat.id, "CAADAQADAQADHYJ7HYCiE4crvJ4kAg")
@@ -56,11 +70,37 @@ def command_hour(message):
     
     hour = int(message.text.replace("h", "").replace("/", ""))
 
-    setClient(message.chat.id,hour=hour)
+    setClient(message.chat.id, hour=hour)
     bot.send_message(message.chat.id, "Processing")
-    bot.send_message(message.chat.id, "Aqui tornariem els resultats")
-    
-    resetClient(message.chat.id)
+
+    index = checkClient(message.chat.id)
+    data = retrieve_tweets(client_list[index][1], hour, 'en')
+
+    if data['state'] == 'NO_MORE_TWEETS':
+        bot.send_message(message.chat.id, "Api is tired, you requested too many coins!")
+        bot.send_message(message.chat.id, "Wait 15 min")
+
+    else:
+        # Pump
+        if data['Score_Average'] > 0:
+            bot.send_sticker(message.chat.id, "CAADBAADcAAD6EZ5AAGO_ov4mgcnRgI")
+            bot.send_message(message.chat.id, "Currency: " + data['Cryptocurrency'])
+            bot.send_message(message.chat.id, "Current Price: " + data['Current_price'])
+            bot.send_message(message.chat.id, "Number of tweets analyzed: " + str(data['Tweet_amount']))
+            bot.send_message(message.chat.id, "Sentiment score (From -10 to 10): " + str(round(data['Score_Average'] * 10, 3)))
+            bot.send_message(message.chat.id, "Weighted Score: " + str(round(data['Weighted_Score'], 3)))
+
+        # Dump
+        else:
+            bot.send_sticker(message.chat.id, "CAADBAADbwAD6EZ5AAHJt9W7WsFcTwI")
+            bot.send_message(message.chat.id, "Currency: " + data['Cryptocurrency'])
+            bot.send_message(message.chat.id, "Current Price: " + data['Current_price'])
+            bot.send_message(message.chat.id, "Number of tweets analyzed: " + data['Tweet_amount'])
+            bot.send_message(message.chat.id, "Sentiment score (From -10 to 10): " + str(round(data['Score_Average'] * 10, 3)))
+            bot.send_message(message.chat.id, "Weighted Score: " + str(round(data['Weighted_Score'], 3)))
+
+        resetClient(message.chat.id)
+
     bot.send_message(message.chat.id, "Which coin do you want to check next?")
     
 
@@ -70,19 +110,21 @@ def command_answer1(message):
     
 
     #CRIDA DE FUNCIONS NECESSARIES
-    bot.send_message(message.chat.id, "Aqui mostrem estadistiques i emojis i blablabla")
     bot.send_message(message.chat.id, "So... It seems...")
     data = retrieve_tweets("bitcoin", 1, "en")
 
-    if data['state'] == 'OK':
+    if data['state'] == 'NO_MORE_TWEETS':
+        bot.send_message(message.chat.id, "Api is tired, you requested too many coins!")
+        bot.send_message(message.chat.id, "Wait 15 min")
+
+    elif data['state'] == 'OK':
         # Pump
         if data['Score Average'] > 0:
             bot.send_sticker(message.chat.id, "CAADBAADcAAD6EZ5AAGO_ov4mgcnRgI")
         # Dump
         else:
             bot.send_sticker(message.chat.id, "CAADBAADbwAD6EZ5AAHJt9W7WsFcTwI")
-    else:
-        print('INTRODUCE AGAIN THE CRYPTOCURRENCY (EJ: Ethereum, Bitcoin, Ripple')
+
 
 @bot.message_handler(func=lambda message: message.text == 'Give me the prize of Bitcoin' and message.content_type == 'text')
 def command_answer2(message):
@@ -97,11 +139,11 @@ def command_answer2(message):
 @bot.message_handler(func=lambda message: True, content_types=['text'])
 def command_default(message):
     
-    coin=message.text.lower().capitalize()
+    coin = message.text.lower().capitalize()
     
-    if coinExist('e'):
+    if coinExist(coin):
 
-        setClient(message.chat.id,coin=coin)
+        setClient(message.chat.id, coin=coin)
 
 
         markup = types.ReplyKeyboardMarkup(row_width=1)
@@ -110,7 +152,7 @@ def command_default(message):
         itembtn3 = types.KeyboardButton('/3h')
         markup.add(itembtn1, itembtn2, itembtn3)
 
-        bot.send_message(message.chat.id, "How many hours?",reply_markup=markup)
+        bot.send_message(message.chat.id, "How many hours?", reply_markup=markup)
    
     else:
 

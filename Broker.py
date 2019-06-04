@@ -11,7 +11,7 @@ class Broker:
         self.follower_based_score = 0
         self.follower_amount = 0
 
-    def analyse(self, tweet_list):
+    def analyze(self, tweet_list):
 
         # Initialize Broker
         print(",,,,..............,......... ...   ..............")
@@ -45,29 +45,34 @@ class Broker:
         # Change the state to "working" and initialize variables
         self.working = True
         self.tweet_amount = len(tweet_list)
-        analyzer = SentimentIntensityAnalyzer()
 
-        # Loop the tweet list and get all the results of sentiment analysis, updating the tweet object
-        for tweet in tweet_list:
+        if self.tweet_amount != 0:
+            analyzer = SentimentIntensityAnalyzer()
 
-            # Get the sentiment of the tweet
-            result = analyzer.polarity_scores(tweet.tweet_text)
-            tweet.sentiment = result['compound']
+            # Loop the tweet list and get all the results of sentiment analysis, updating the tweet object
+            for tweet in tweet_list:
 
-            # Sum scores
-            self.score_sum += result['compound']
+                # Get the sentiment of the tweet
+                result = analyzer.polarity_scores(tweet.tweet_text)
+                tweet.sentiment = result['compound']
 
-            # Compute the score-followers algorithm
-            self.follower_based_score += self.analyse_followers_score(tweet)
+                # Sum scores
+                self.score_sum += result['compound']
 
-            # Get follower count
-            self.follower_amount += tweet.user_followers
+                # Compute the score-followers algorithm
+                self.follower_based_score += self.analyse_followers_score(tweet)
 
-        # Compute the standard avg
-        self.score_avg = self.score_sum / self.tweet_amount
+                # Get follower count
+                self.follower_amount += tweet.user_followers
 
-        # Change the state to "not working"
-        self.working = False
+            # Compute the standard avg
+            self.score_avg = self.score_sum / self.tweet_amount
+
+            # Change the state to "not working"
+            self.working = False
+
+        else:
+            return False
 
     @staticmethod
     def analyse_followers_score(tweet):
