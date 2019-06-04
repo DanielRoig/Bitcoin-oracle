@@ -119,8 +119,10 @@ def command_default(message):
 
 
 
+
 bot.polling()
 
-while True: # Don't let the main Thread end.
+while True:
+    # Don't let the main Thread end.
     pass
 
