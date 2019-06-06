@@ -34,8 +34,13 @@ This will install you all the required dependencies
 
 Simply run:
 ```
-python Main.py
+python TelegramBot.py
 ```
 ## How to use
 
 ToDo
+
+## Acknowledgment
+
+Shoutouts to Joan
+Shotouts to Joan
