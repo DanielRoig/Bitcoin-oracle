@@ -1,0 +1,67 @@
+Accrue,1
+Accumulate,1
+Acquisition,1
+Amortization,1
+Arbitrage,1
+Arrears,0
+Balloon payment,1
+Bankrupt,0
+Bear,0
+Beneficiary,1
+Bull,1
+Buying,1
+Buyout,1
+Capital gain,1
+Cartel,1
+Cashier,1
+Collect,1
+Correction,0
+Deal,1
+Demand,1
+Depreciation,0
+Depression,0
+Deregulation,1
+Devaluation,0
+Downturn,0
+Dump,0
+Embezzlement,0
+Endorse,1
+Escrow,1
+Exorbitant,1
+Expectation,1
+Extortion,0
+Failure,0
+Falling price,0
+Fiduciary,1
+Gain,1
+Growth,1
+Illegal,0
+Income,1
+Inflated price,0
+Insufficient,0
+Junk bond,0'
+Kiting,1
+Low risk,1
+Lucrative,1
+Maturity,1
+Overcompensate,1
+Oversight,1
+Peaks,1
+Profit,1
+Questionable,0
+Rally,1
+Recession,0
+Reduction,0
+Regulation,0
+Retirement,0
+Risk,0
+Sell-off,0
+Selling,0
+Slump,0
+Surety,1
+Surplus,1
+Takeover,1
+Unregulated,1
+Valuable,1
+Withdrawal,0
+Yield,1

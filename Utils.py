@@ -5,7 +5,6 @@ from pprint import pprint
 
 def retrieve_tweets(currency, hours, language):
 
-
     # Fill up a dictionary with the crypto abbreviation ("Bitcoin" : "BTC")
     currency_list = {}
     currency_list_file = open('assets/currency_list.txt', "r")
@@ -24,26 +23,20 @@ def retrieve_tweets(currency, hours, language):
     currency_lower_crawler = Crawler(currency.lower(), hours, language)
     currency_abbreviation_crawler = Crawler(currency_abbreviation, hours, language)
 
+    # Get all the tweets
     currency_capital_crawler.track()
-    # currency_lower_crawler.track()
-    # currency_abbreviation_crawler.track()
+    currency_lower_crawler.track()
+    currency_abbreviation_crawler.track()
 
     # Create the Brokers
     broker_capital = Broker()
     broker_lower = Broker()
     broker_abbreviation = Broker()
 
-    # Broker analyses the sentiment of all the tweets retrieved
-    # If it does not get any tweets return error
-    # if not broker_capital.analyze(currency_capital_crawler.myTweets):
-    #     data = {
-    #         'state': 'NO_MORE_TWEETS'
-    #     }
-    #     return data
-
-    broker_capital.analyze(currency_capital_crawler.myTweets)
-
-
+    # Analyze the tweet list
+    broker_capital.analyze(currency_capital_crawler.myTweets)             # Bitcoin
+    broker_lower.analyze(currency_lower_crawler.myTweets)                 # bitcoin
+    broker_abbreviation.analyze(currency_abbreviation_crawler.myTweets)   # BTC
 
     # Get all the data of the crypto from www.cryptocompare.com
     cryptocurrency = CryptoData.CryptoData()
@@ -54,11 +47,15 @@ def retrieve_tweets(currency, hours, language):
     score_avg = (broker_capital.score_avg + broker_lower.score_avg + broker_abbreviation.score_avg) / 3
     weighted_score = (broker_capital.follower_based_score + broker_lower.follower_based_score + broker_abbreviation.follower_based_score) / 3
     pprint(cryptodata)
+
+    # This index modifies the entire result, it is designed avoid cryptodumbs and fake stuff
+    regulator_index = -3
+
     data = {
         'Cryptocurrency': cryptodata['RAW']['FROMSYMBOL'],
         'Current_price': cryptodata['DISPLAY']['PRICE'],
         'Tweet_amount': tweet_amount,
-        'Score_Average': score_avg,
+        'Score_Average': score_avg + regulator_index,
         'Weighted_Score': weighted_score,
         'state': 'OK'
     }

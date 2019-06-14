@@ -74,7 +74,10 @@ def command_hour(message):
     bot.send_message(message.chat.id, "Processing")
 
     index = checkClient(message.chat.id)
+
     data = retrieve_tweets(client_list[index][1], hour, 'en')
+
+
 
     if data['state'] == 'NO_MORE_TWEETS':
         bot.send_message(message.chat.id, "Api is tired, you requested too many coins!")

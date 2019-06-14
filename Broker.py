@@ -54,10 +54,15 @@ class Broker:
 
                 # Get the sentiment of the tweet
                 result = analyzer.polarity_scores(tweet.tweet_text)
+
+                # Set up the score into the tweet object
                 tweet.sentiment = result['compound']
 
+                # Add the financial dictionary weight
+                self.financial_dictionary_analysis(tweet)
+
                 # Sum scores
-                self.score_sum += result['compound']
+                self.score_sum += tweet.sentiment
 
                 # Compute the score-followers algorithm
                 self.follower_based_score += self.analyse_followers_score(tweet)
@@ -73,6 +78,30 @@ class Broker:
 
         else:
             return False
+
+    @staticmethod
+    def financial_dictionary_analysis(tweet):
+        financial_dictionary = open('assets/financial_dictionary.txt', 'r')
+
+        # Loop the financial dictionary ('Word', 'score'), score is 1 (positive) or 0 (negative)
+        for line in financial_dictionary:
+
+            word_caps = line.split(',')[0]
+            word_lower = line.split(',')[0].lower()
+            word_score = line.split(',')[1]
+
+            # If tweet has a financial word
+            if word_lower in tweet.tweet_text or word_caps in tweet.tweet_text:
+
+                # If word is negative
+                if word_score == '0':
+                    tweet.sentiment = -0.8
+                    tweet.financial_weight = -1
+
+                # If word is positive
+                else:
+                    tweet.sentiment = 0.8
+                    tweet.financial_weight = 1
 
     @staticmethod
     def analyse_followers_score(tweet):
@@ -105,3 +134,5 @@ class Broker:
             score = 0
 
         return score
+
+

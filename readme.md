@@ -33,14 +33,25 @@ This will install you all the required dependencies
 ## Deployment
 
 Simply run:
+
 ```
 python TelegramBot.py
 ```
-## How to use
+## How to use (workflow)
 
-ToDo
+###Birth the bot   
+Go to: https://t.me/BitcoinOracleBot 
+
+###Starting the bot
+Simply type '/start'
+
+###Winning money
+Answer the questions that the bot will ask you = profit
+####Important
+Obey the bot, do not tell him anything offensive or disgusting, that would be unfair since he will make you rich.
 
 ## Acknowledgment
 
-Shoutouts to Joan
-Shotouts to Joan
+Shoutouts to [Joan Soler](https://www.linkedin.com/in/juansolercompany/), the [AVALDO](https://www.upf.edu/es/web/upeq/professorat-i-docencia) god and his faithful cat [Kratos](https://www.instagram.com/kratos_the_cat/)
+
+Dedicated to our boy [Carlos Matos](https://www.youtube.com/watch?v=xK3yuxrmCac)
