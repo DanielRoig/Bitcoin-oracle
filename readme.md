@@ -1,7 +1,7 @@
 # Bitcoin Oracle
 
 A simple-to-use Python program made for the sake of :moneybag: :dollar: :heart_eyes: :credit_card: :chart_with_upwards_trend:  
-Analyzes the current tweet sentiment about a eligible cryptocurrency and through Telegram you are noticed.  
+Telegram bot that nalyzes the current tweet sentiment about an eligible cryptocurrency, in a specified period of time. Good for scalping. 
 It is made of:
 * Twitter crawler built with [Tweepy](https://www.tweepy.org/)
 * Broker module that calculates the sentiment of the tweets built with [VADER](https://github.com/cjhutto/vaderSentiment) 
